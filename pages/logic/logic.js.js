@@ -62,5 +62,16 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  clickPoint(){
+    wx.showActionSheet({
+      itemList: ['A', 'B', 'C','D','E','F'],
+      success(res) {
+        console.log(res.tapIndex)
+      },
+      fail(res) {
+        console.log(res.errMsg)
+      }
+    })
   }
 })

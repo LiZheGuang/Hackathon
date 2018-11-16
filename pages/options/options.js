@@ -46,7 +46,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    clearInterval(this.data.timeSetInterval)
   },
 
   /**
@@ -87,8 +87,8 @@ Page({
           console.log('成功')
         }
       })
-
-    socket.onOpen(function(){
+    this.data.socket = socket
+    this.data.socket.onOpen(function(){
       sendSocketMessage(JSON.stringify({ key: 'name', userInfo: that.data.userInfo.userInfo }))
       onMessage()
     })
@@ -108,10 +108,12 @@ Page({
       socket.onMessage((soketData)=>{
         console.log(soketData)
         console.log('接受参数')
+        let data = JSON.parse(soketData.data)
         that.setData({
           assignment: JSON.parse(soketData.data)
         })
-        console.log(JSON.parse(soketData.data))
+        // console.log(JSON.parse(soketData.data))
+        // 接收参数的判断
       })
     }
   },
@@ -130,8 +132,18 @@ Page({
   timeDown(){
     let numbers = this.data.numbers
     let that = this
-     let time = setInterval(function(){
+    clearInterval(this.data.timeSetInterval)
+    this.data.timeSetInterval = setInterval(function(){
        numbers--
+       console.log('定时器')
+       if(numbers<=0){
+        //  为0 挑战成功
+         wx.redirectTo({
+           url: '/pages/summarize/summarize',
+         })
+         clearInterval(that.data.timeSetInterval)
+         return false;
+       }
        that.setData({
          numbers:numbers
        })
@@ -143,6 +155,22 @@ Page({
     wx.onSocketClose(function (res) {
       console.log('WebSocket 已关闭！')
     })
+  },
+  // 欣然接受
+  clickAccept(){
+    let assignment = this.data.assignment
+    
+    let type = assignment.data.content.type
+    console.log('clickAccept')
+    this.data.socket.send({
+      data:JSON.stringify({'key':'input'})
+    })
+    if (type === 'cut'){
+    
+      wx.redirectTo({
+        url: '/pages/chop/chop',
+      })
+    }
   }
   
 })

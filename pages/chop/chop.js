@@ -5,14 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    numbers:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // setTimeout(function(){
+    //   wx.navigateBack({
+    //     delta: 1
+    //   })
+    // },5000)
   },
 
   /**
@@ -62,5 +66,30 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  clickChop(){
+    console.log('21312')
+    let numbers = this.data.numbers
+    numbers++
+    if(numbers >= 100){
+      wx.showModal({
+        title: '提示',
+        content: '成功砍掉需求',
+        showCancel:false,
+        success(res) {
+          if (res.confirm) {
+            wx.redirectTo({
+              url: '/pages/options/options',
+            })
+          } else if (res.cancel) {
+            console.log('用户点击取消')
+          }
+        }
+      })
+      return false
+    }
+    this.setData({
+      numbers: numbers
+    })
   }
 })
