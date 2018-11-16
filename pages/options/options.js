@@ -109,6 +109,7 @@ Page({
         console.log(soketData)
         console.log('接受参数')
         let data = JSON.parse(soketData.data)
+        clearInterval(that.data.timeSetInterval)
         that.setData({
           assignment: JSON.parse(soketData.data)
         })
@@ -151,7 +152,9 @@ Page({
   },
   // 断开Socket
   clickSocket(){
-    wx.closeSocket()
+    this.timeDown()
+    return false
+    wx.closeSocket()    
     wx.onSocketClose(function (res) {
       console.log('WebSocket 已关闭！')
     })
@@ -165,10 +168,22 @@ Page({
     this.data.socket.send({
       data:JSON.stringify({'key':'input'})
     })
+    console.log(type)
+
+    wx.setStorageSync('assignment', assignment)
+
     if (type === 'cut'){
-    
+
       wx.redirectTo({
         url: '/pages/chop/chop',
+      })
+    } else if (type === 'logic'){
+      wx.redirectTo({
+        url: '/pages/logic/logic.js',
+      })
+    }else{
+      wx.redirectTo({
+        url: '/pages/answer/answer',
       })
     }
   }
