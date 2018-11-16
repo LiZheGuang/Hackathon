@@ -1,0 +1,65 @@
+
+page{
+  background: #444c61;
+}
+
+/* 298 × 144 */
+.top_title{
+  text-align: center;
+  margin-top: 90rpx;
+}
+.top_title image{
+  width: 298rpx;
+  height: 144rpx;
+}
+.summaryMes{
+  padding: 40rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.summaryMesList{
+  color: white;
+  margin-bottom: 30rpx;
+}
+.codeAppellation{
+  width: 100%;
+  height: 207rpx;
+}
+.codeAppellation image{
+  width: 100%;
+  height: 100%;
+}
+.over_message_view{
+  text-align: center;
+}
+.over_message{
+  /* 644 × 76 */
+  margin-top: 100rpx;
+  width: 644rpx;
+  /* margin: auto; */
+  height: 76rpx;
+}
+
+ .buttonImage {
+  height: 84rpx;
+  width: 260rpx;
+  position: relative;
+  margin: auto;
+  margin-top: 50rpx;
+  
+}
+.buttonImage image{
+  width: 100%;
+  height: 100%;
+}
+.buttonImage text{
+  color: white;
+  font-size: 30rpx;
+  position: absolute;
+  top:11rpx;
+left:86rpx;
+
+
+}

@@ -1,0 +1,10 @@
+<view class="topLogo">
+  <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_index_logo.png'></image>
+</view>
+
+<view class='button_list' bindtap='clickHackathon' >
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo"><image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_index_01.png'></image></button>
+  
+  <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_index_01.png'></image>
+  <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_index_01.png'></image>
+</view>

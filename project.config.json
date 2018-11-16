@@ -1,0 +1,79 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.5",
+	"appid": "wxf9cf5a17e43c0fa2",
+	"projectname": "Hackathon",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": -1,
+					"name": "选择关卡-customs",
+					"pathName": "pages/customs/customs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "游戏进行与选择-options",
+					"pathName": "pages/options/options",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "答题-options",
+					"pathName": "pages/answer/answer",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "逻辑卡片-logic",
+					"pathName": "pages/logic/logic.js",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "砍需求-chop",
+					"pathName": "pages/chop/chop",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "总结-summarize",
+					"pathName": "pages/summarize/summarize"
+				}
+			]
+		}
+	}
+}

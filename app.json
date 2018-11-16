@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/gameHome/gameHome",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/customs/customs",
+    "pages/options/options",
+    "pages/answer/answer",
+    "pages/logic/logic.js",
+    "pages/chop/chop",
+    "pages/summarize/summarize"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "程序员的逻辑思维",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,17 @@
+<view class="top_title_time">距离交付需求还有<text class='bigTime'>99</text>天</view>
+<view class='split_Message'>炉火纯青的CODE着你的代码</view>
+
+<!--随机触发剧情 -->
+<view class='curtain'></view>
+<!--随机触发剧情 -->
+
+<view class='tab_button'>
+  <view class='buttonImage'>
+    <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image>
+    <text >选项A</text>
+  </view>
+    <view class='buttonImage'>
+    <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image>
+    <text >选项B</text>
+  </view>
+</view>

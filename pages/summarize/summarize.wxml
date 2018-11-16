@@ -1,0 +1,24 @@
+<view class="top_title">
+  <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_over_top.png'></image>
+</view>
+<view class='summaryMes'>
+  <view class="summaryMesList">历时 XXX 个小时</view>
+  <view class="summaryMesList">历时 XXX 个小时</view>
+  <view class="summaryMesList">历时 XXX 个小时</view>
+  <view class="summaryMesList">历时 XXX 个小时</view>
+  <view class="summaryMesList">历时 XXX 个小时</view>
+  <view class="summaryMesList">历时 XXX 个小时</view>
+</view>
+<!-- 称谓 -->
+<view class='codeAppellation'>
+  <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_over_title.png'></image>
+</view>
+
+<view class='over_message_view'>
+  <image class='over_message' src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_over_message.png'></image>
+</view>
+
+<view class='buttonImage'>
+    <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image>
+    <text >下一关</text>
+  </view>

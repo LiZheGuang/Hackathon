@@ -1,0 +1,52 @@
+/* pages/options/options.wxss */
+
+page{
+  background: #444c61;
+}
+.top_title_time{
+  font-size: 32rpx;
+  color: white;
+  text-align: center;
+}
+.bigTime{
+  font-size: 150rpx;
+}
+.split_Message{
+  color: white;
+  font-size: 30rpx;
+  text-align: center;
+}
+.curtain{
+  color: white;
+  font-size: 30rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  height: 500rpx;
+  background: #2a303d;
+}
+.tab_button{
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+
+}
+.tab_button .buttonImage {
+  height: 122rpx;
+  width: 368rpx;
+  position: relative;
+  margin-top: 50rpx;
+  
+}
+.buttonImage image{
+  width: 100%;
+  height: 100%;
+}
+.buttonImage text{
+  color: white;
+  font-size: 40rpx;
+  position: absolute;
+  top:21rpx;
+  left:126rpx;
+
+}

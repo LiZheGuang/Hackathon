@@ -1,0 +1,30 @@
+<view class='customs_bgc'>
+  <view class="customs_left imgScreening">
+    <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_index_02.png'></image>
+  </view>
+  <view class="customs_right imgScreening">
+    <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_screening_top.png'></image>
+  </view>
+</view>
+
+<!-- userinfo -->
+<view class='userinfo'>
+    <view class='userinfo_use'>
+      <image src='{{userInfoData.userInfo.avatarUrl}}'></image>
+    </view>
+    <view class='mt5'>LV 9999</view>
+    <view class='mt5'>骨灰级程序员</view>
+    <view class='mt5'>已经承接了9999个需求</view>
+</view>
+<!-- userinfo -->
+
+<!-- 关卡选择 -->
+<view class='customsItem'>
+  <view class='item' wx:for="{{message}}" wx:key="message">
+    <view class='itemBgc'>
+        <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image>
+        <view class='itemBgc_title'>{{item}}</view>
+    </view> 
+  </view>
+ 
+</view>

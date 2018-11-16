@@ -1,0 +1,44 @@
+page{
+  background: #444c61;
+}
+.topBanner{
+  height: 500rpx;
+  background: white;
+}
+
+/* 379 × 224 */
+.chopBox{
+  margin: 0 auto;
+  text-align: center;
+}
+.schedule{
+  margin-top: 100rpx;
+  position: relative;
+  left: 100rpx;
+}
+.scheduleNumber{
+  font-size: 150rpx;
+  line-height: 150rpx;
+  position: absolute;
+  color: white;
+  left:3rpx;
+  top:18px;
+
+  font-weight: bold;
+}
+.schedule image{
+  width: 379rpx;
+  height: 224rpx;
+}
+
+.chopMesg{
+  margin-top: 28rpx;
+  width: 450rpx;
+  height: 33rpx;
+}
+.chopMesg_clickButton{
+  /* 367 × 118 */
+  margin-top: 56rpx;
+  width: 367rpx;
+  height: 118rpx;
+}

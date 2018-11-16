@@ -1,0 +1,10 @@
+<view class="topBanner"></view>
+
+<view class='chopBox'>
+  <view class='schedule'>
+    <text class='scheduleNumber'>00</text><image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_schedule.png'></image>
+  </view>
+  <image class='chopMesg' src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_text.png'></image>
+
+  <image class='chopMesg_clickButton' src='http://pi9osg2q9.bkt.clouddn.com/game_clup_xq.png'></image>
+</view>
