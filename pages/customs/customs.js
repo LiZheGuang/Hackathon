@@ -69,5 +69,10 @@ Page({
     this.setData({
       userInfoData: app.globalData.userInfo
     })
+  },
+  clickCustoms(){
+    wx.navigateTo({
+      url: '/pages/options/options',
+    })
   }
 })

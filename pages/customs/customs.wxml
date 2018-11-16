@@ -19,7 +19,7 @@
 <!-- userinfo -->
 
 <!-- 关卡选择 -->
-<view class='customsItem'>
+<view class='customsItem' bindtap='clickCustoms'>
   <view class='item' wx:for="{{message}}" wx:key="message">
     <view class='itemBgc'>
         <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image>

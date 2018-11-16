@@ -20,6 +20,18 @@ page{
   margin-top: 50rpx;
   height: 500rpx;
   background: #2a303d;
+  padding: 40rpx;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.curtainTitle{
+  font-size: 50rpx;
+  font-weight: bold;
 }
 .tab_button{
   display: flex;
@@ -40,10 +52,15 @@ page{
   height: 100%;
 }
 .buttonImage text{
-  color: white;
+  
   font-size: 40rpx;
   position: absolute;
-  top:21rpx;
-  left:126rpx;
+  top:22rpx;
+  left:0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  color: white;
 
 }

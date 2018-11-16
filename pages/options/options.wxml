@@ -1,17 +1,18 @@
-<view class="top_title_time">距离交付需求还有<text class='bigTime'>99</text>天</view>
+<view class="top_title_time">距离交付需求还有<text class='bigTime'>{{numbers}}</text>天</view>
 <view class='split_Message'>炉火纯青的CODE着你的代码</view>
 
 <!--随机触发剧情 -->
-<view class='curtain'></view>
+<view class='curtain'>
+  <view class='curtainTitle'>{{assignment.data.name}}</view>
+  <view class='curtainContent'>{{assignment.data.content.title}}</view>
+</view>
 <!--随机触发剧情 -->
 
 <view class='tab_button'>
-  <view class='buttonImage'>
-    <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image>
-    <text >选项A</text>
+  <view class='buttonImage' >
+    <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image><text>欣然接受</text>
   </view>
-    <view class='buttonImage'>
-    <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image>
-    <text >选项B</text>
+    <view class='buttonImage' bindtap='clickSocket'>
+    <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image><text >残酷拒绝</text>
   </view>
 </view>

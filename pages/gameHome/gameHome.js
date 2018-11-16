@@ -85,13 +85,14 @@ Page({
     }
   },
   clickHackathon(){
-    wx.navigateTo({
-      url: '/pages/customs/customs',
-    })
+   
   },
   getUserInfo(userData){
     app.globalData.userInfo = userData.detail
     console.log(app.globalData)
+    wx.navigateTo({
+      url: '/pages/customs/customs',
+    })
   }
 
 })
