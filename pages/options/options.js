@@ -94,7 +94,7 @@ Page({
     const socketMsgQueue = []
     let that = this
     let socket =  wx.connectSocket({
-        url: 'ws://10.8.203.182:8080',
+        url: 'ws://www.abrev.cn:8080',
         success(data){
           console.log('成功')
         }
@@ -165,7 +165,7 @@ Page({
        that.setData({
          numbers:numbers
        })
-     },1000)
+     },500)
   },
   // 断开Socket
   clickSocket(){

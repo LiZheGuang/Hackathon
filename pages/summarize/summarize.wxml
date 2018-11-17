@@ -18,5 +18,5 @@
 
 <view class='buttonImage'>
     <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image>
-    <text >完结撒花~</text>
+    <text >下一关</text>
   </view>

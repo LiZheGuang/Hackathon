@@ -10,6 +10,7 @@ page{
   margin-top: 16rpx;
   display: flex;
   justify-content: space-between;
+
 }
 .item{
   display: flex;
