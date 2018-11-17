@@ -4,6 +4,10 @@ page{
 .topBanner{
   height: 500rpx;
   background: white;
+  background-image: url(http://pi9osg2q9.bkt.clouddn.com/Hackathon_schedul_logBgc.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* 379 × 224 */

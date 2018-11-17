@@ -15,7 +15,7 @@ Page({
         }
       }
     },
-    numbers:50
+    numbers:0
   },
 
   /**
@@ -24,6 +24,9 @@ Page({
   onLoad: function (options) {
     // this.webSocketGame()
     console.log('1321')
+    this.setData({
+      numbers:getApp().globalData.timeNumber
+    })
     this.getUserInfo()
     this.timeDown()
   },
@@ -47,13 +50,20 @@ Page({
    */
   onHide: function () {
     clearInterval(this.data.timeSetInterval)
+    wx.closeSocket()
+    wx.onSocketClose(function (res) {
+      console.log('WebSocket 已关闭！')
+    })
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    wx.closeSocket()
+    wx.onSocketClose(function (res) {
+      console.log('WebSocket 已关闭！')
+    })
   },
 
   /**
@@ -109,7 +119,11 @@ Page({
         console.log(soketData)
         console.log('接受参数')
         let data = JSON.parse(soketData.data)
+        that.data.socket.send({
+          data: JSON.stringify({ 'key': 'input' })
+        })
         clearInterval(that.data.timeSetInterval)
+
         that.setData({
           assignment: JSON.parse(soketData.data)
         })
@@ -137,6 +151,7 @@ Page({
     this.data.timeSetInterval = setInterval(function(){
        numbers--
        console.log('定时器')
+      getApp().globalData.timeNumber = numbers       
        if(numbers<=0){
         //  为0 挑战成功
          wx.redirectTo({
@@ -153,6 +168,12 @@ Page({
   // 断开Socket
   clickSocket(){
     this.timeDown()
+    this.data.socket.send({
+      data: JSON.stringify({ 'key': 'output' })
+    })
+    this.setData({
+      'assignment.key':false
+    })
     return false
     wx.closeSocket()    
     wx.onSocketClose(function (res) {
@@ -173,15 +194,18 @@ Page({
     wx.setStorageSync('assignment', assignment)
 
     if (type === 'cut'){
-
+      getApp().globalData.cutNumber = parseFloat(getApp().globalData.cutNumber) + 1
       wx.redirectTo({
         url: '/pages/chop/chop',
       })
     } else if (type === 'logic'){
+      getApp().globalData.logicNumber = parseFloat(getApp().globalData.logicNumber)+ 1
       wx.redirectTo({
         url: '/pages/logic/logic.js',
       })
     }else{
+      getApp().globalData.selectNumber = parseFloat(getApp().globalData.selectNumber)+ 1
+      
       wx.redirectTo({
         url: '/pages/answer/answer',
       })

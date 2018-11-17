@@ -2,12 +2,10 @@
   <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_over_top.png'></image>
 </view>
 <view class='summaryMes'>
-  <view class="summaryMesList">历时 XXX 个小时</view>
-  <view class="summaryMesList">历时 XXX 个小时</view>
-  <view class="summaryMesList">历时 XXX 个小时</view>
-  <view class="summaryMesList">历时 XXX 个小时</view>
-  <view class="summaryMesList">历时 XXX 个小时</view>
-  <view class="summaryMesList">历时 XXX 个小时</view>
+  <view class="summaryMesList">历时 {{globalData.alwaysNumber}} 个小时</view>
+  <view class="summaryMesList">写了 {{globalData.cutNumber}} 个BUG</view>
+  <view class="summaryMesList">遇到难点 {{globalData.logicNumber}} 次</view>
+  <view class="summaryMesList">临时增加需求 {{globalData.selectNumber}} 次</view>
 </view>
 <!-- 称谓 -->
 <view class='codeAppellation'>
@@ -20,5 +18,5 @@
 
 <view class='buttonImage'>
     <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image>
-    <text >下一关</text>
+    <text >完结撒花~</text>
   </view>

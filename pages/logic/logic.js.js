@@ -116,6 +116,7 @@ Page({
                 wx.showToast({
                   title: '恭喜您得了' + that.isSubject() + '分',
                 })
+                getApp().globalData.points = parseFloat(getApp().globalData.points) + parseFloat(that.isSubject())
                 setTimeout(function(){
                   wx.redirectTo({
                     url: '/pages/options/options',

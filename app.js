@@ -3,7 +3,15 @@ App({
   onLaunch: function () {
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    points:0,
+    alwaysNumber:50,
+    timeNumber:50,
+    cutNumber:0,
+    logicNumber:0,
+    selectNumber:0
+
+
   },
   loadFisize() {
     wx.loadFontFace({

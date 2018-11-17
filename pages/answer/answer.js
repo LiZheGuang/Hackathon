@@ -66,5 +66,27 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  clickButton(data){
+    console.log(data)
+    let item = data.currentTarget.dataset.item
+    let numbers = item.number
+    console.log(item.number)
+    wx.showModal({
+      title: '提示',
+      content: '增加了' + numbers +'分',
+      showCancel:false,
+      success(res) {
+        if (res.confirm) {
+          getApp().globalData.points = parseFloat(getApp().globalData.points)  + parseFloat(numbers)
+          console.log(getApp().globalData)
+          wx.reLaunch({
+            url: '/pages/options/options'
+          })
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
   }
 })

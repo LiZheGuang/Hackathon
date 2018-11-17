@@ -72,6 +72,7 @@ Page({
     let numbers = this.data.numbers
     numbers++
     if(numbers >= 100){
+      getApp().globalData.points = parseFloat(getApp().globalData.points) + parseFloat(numbers)
       wx.showModal({
         title: '提示',
         content: '成功砍掉需求',

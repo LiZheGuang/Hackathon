@@ -11,7 +11,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.2.5",
+	"libVersion": "2.0.1",
 	"appid": "wxf9cf5a17e43c0fa2",
 	"projectname": "Hackathon",
 	"debugOptions": {
