@@ -6,12 +6,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    test:'https://mmbiz.qpic.cn/mmbiz_jpg/W9YcQcK245a6DhiaRcH7b7QULvCVf22KBibefXZwAVMmbF3lcE6dgJPsZ6G8L0iansCOjJNbNGSHFQ7kHouHJSfkg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1',
     userInfo:"",
     assignment:{
       data:{
         name:"正常开发中",
         content:{
-          title: "你正在随心所欲的写着没有程序的BUG~"        
+          title: "你正在随心所欲的写着没有程序的BUG~",
+          url:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542439017290&di=bbae2d6e81d249cb9145e6f75412892f&imgtype=0&src=http%3A%2F%2Fhiphotos.baidu.com%2Ffeed%2Fpic%2Fitem%2Fb64543a98226cffc28de352bb2014a90f703eab7.jpg"
         }
       }
     },
@@ -172,7 +174,8 @@ Page({
       data: JSON.stringify({ 'key': 'output' })
     })
     this.setData({
-      'assignment.key':false
+      'assignment.key':false,
+     'assignment.data.content.url' :'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542439017290&di=bbae2d6e81d249cb9145e6f75412892f&imgtype=0&src=http%3A%2F%2Fhiphotos.baidu.com%2Ffeed%2Fpic%2Fitem%2Fb64543a98226cffc28de352bb2014a90f703eab7.jpg'
     })
     return false
     wx.closeSocket()    

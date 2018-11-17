@@ -2,8 +2,8 @@
   <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_over_top.png'></image>
 </view>
 <view class='summaryMes'>
-  <view class="summaryMesList">历时 {{globalData.alwaysNumber}} 个小时</view>
-  <view class="summaryMesList">写了 {{globalData.cutNumber}} 个BUG</view>
+  <view class="summaryMesList">历时 {{globalData.alwaysNumber * 8}} 个小时</view>
+  <view class="summaryMesList">认真的写了 {{globalData.cutNumber * 5}} 个BUG</view>
   <view class="summaryMesList">遇到难点 {{globalData.logicNumber}} 次</view>
   <view class="summaryMesList">临时增加需求 {{globalData.selectNumber}} 次</view>
 </view>

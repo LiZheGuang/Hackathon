@@ -15,12 +15,13 @@ page{
   color: white;
   font-size: 30rpx;
   text-align: center;
+ 
 }
 .curtain{
   margin-top: 50rpx;
   height: 500rpx;
   background: #2a303d;
-  padding: 40rpx;
+  padding: 40rpx 0;
   box-sizing: border-box;
   text-align: center;
   color: white;
@@ -28,6 +29,15 @@ page{
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.messageZezhao{
+  background: #282b39d1;
+  padding: 20rpx;
+  box-sizing: border-box;
+  width: 100%;
 }
 .curtainTitle{
   font-size: 50rpx;

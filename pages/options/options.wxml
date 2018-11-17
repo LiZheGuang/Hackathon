@@ -2,9 +2,12 @@
 <view class='split_Message'>炉火纯青的CODE着你的代码</view>
 
 <!--随机触发剧情 -->
-<view class='curtain'>
+<view class='curtain' style='background-image: url({{assignment.data.content.url}})'>
+<view class='messageZezhao'>
   <view class='curtainTitle'>{{assignment.data.name}}</view>
   <view class='curtainContent'>{{assignment.data.content.title}}</view>
+</view>
+  
 </view>
 <!--随机触发剧情 -->
 
