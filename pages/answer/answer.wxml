@@ -6,16 +6,9 @@
 <!--随机触发剧情 -->
 
 <view class='tab_button'>
-  <view class='buttonImage'>
+  <view class='buttonImage' wx:for="{{buttonImage.content.select}}">
     <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image>
-    <text >选项A</text>
+    <text >{{item.name}}</text>
   </view>
-    <view class='buttonImage'>
-    <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image>
-    <text >选项B</text>
-  </view>
-     <view class='buttonImage'>
-    <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image>
-    <text >选项C</text>
-  </view>
+
 </view>
