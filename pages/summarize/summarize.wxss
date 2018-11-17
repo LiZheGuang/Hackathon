@@ -63,3 +63,8 @@ left:86rpx;
 
 
 }
+.points{
+  text-align: center;
+  color: white;
+  margin-top: 50rpx;
+}

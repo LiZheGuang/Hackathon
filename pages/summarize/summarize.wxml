@@ -19,4 +19,5 @@
 <view class='buttonImage'>
     <image src='http://pi9osg2q9.bkt.clouddn.com/Hackathon_game_button.png'></image>
     <text >下一关</text>
+    <view class="points">总共得 {{globalData.points}} 分</view>    
   </view>
